@@ -1,4 +1,4 @@
-# todoListApplication
+# Todo TASK Application
 TodoList Application for Scale 360 interview
 
 API Setup Step
