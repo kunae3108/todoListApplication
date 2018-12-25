@@ -7,4 +7,6 @@ API Setup Step
 3.	Edit Application.properties file username/password parameters
 4.	Run application via spring boot command “mvn spring-boot:run”
 
-For example prepared request from developer please see in "testcase.postman_collection"
+# Information
+>> For example prepared request from developer please see in "testcase.postman_collection"
+>> API Specification Document please see "api_specification.xlsx"
