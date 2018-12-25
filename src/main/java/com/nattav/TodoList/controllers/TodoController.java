@@ -84,12 +84,12 @@ public class TodoController
 	}
 	
 	@DeleteMapping("/todos/{id}")
-	public ResponseEntity<?> deleteNote(@PathVariable(value = "id") Long _InfTodoObjId) {
+	public String deleteNote(@PathVariable(value = "id") Long _InfTodoObjId) {
 		InfTodoObj infTodoObj = infTodoObjRepository.findById(_InfTodoObjId)
 	            .orElseThrow(() -> new TodoListExceptionHandler("Todo task", "ID", _InfTodoObjId));
 
 	    infTodoObjRepository.delete(infTodoObj);
 
-	    return ResponseEntity.ok().build();
+	    return "success";
 	}
 }
